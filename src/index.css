@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(221, 221, 221);
+  font-family: Verdana, sans-serif;
+}
+.App {
+  position: relative;
+  text-align: center;
+  width: 500px;
+  margin: 40px auto;
+  border-radius: 20px;
+  padding: 40px 0px;
+  box-shadow: 10px 10px 25px -9px rgba(0,0,0,0.75);
+}
+
+.App h1{
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.App .item-todo {
+  padding: 0px;
+  width: 400px;
+  height: fit-content;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+  border: none;
+  /* border-radius: 5px; */
+  border-bottom: 0.5px rgb(179, 10, 10) solid;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.App .item-todo:hover {
+  color: rgb(179, 10, 10);
+  transition: 500ms;
+}
+
+.App .item-todo .item-text {
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px 0;
+  width: 300px; 
+}
+
+.App input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgb(179, 10, 10);
+  outline: none;
+  background: transparent;
+}
+
+.App button {
+  padding: 16px 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(179, 10, 10);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.App .item-todo .item-delete {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  font-size: 22px;
+  position: relative;
+  left: -4px;
+  bottom: 5px;
+  padding: 15px 0;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.background{
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(253, 253, 253);
+  box-shadow: -10px -10px 25px -9px rgba(255,255,255,1);
+  z-index: -1;
+}
